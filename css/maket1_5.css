@@ -1,0 +1,14 @@
+.swiper {
+  width: 450px;
+    height: 154px;
+  }
+  .swiper-pagination,.swiper-scrollbar,.swiper,.swiper-wrapper,.swiper-button-next{
+border: 1px solid red;
+  }
+  .slide1{
+    width:200px;
+    /* margin:16px; */
+    height:72px;
+    border: 1px solid blue;
+    margin:0 auto;
+  }

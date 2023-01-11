@@ -1,4 +1,7 @@
-const swiper = new Swiper('.swiper', {
+const body = document.querySelector('body');
+// console.log(body.offsetWidth);
+if(body.offsetWidth<768){
+  const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -13,7 +16,25 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    spaceBetween:30,
-    // slidesPerView:2.1,
+    spaceBetween:16,
+    loopedSlides:3,
+    slidesPerView:'auto',
   });
-  console.log('Я — пидарас!')
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
+  document.head.appendChild(link);
+};
+
+const SwiperSlide=document.querySelector('.swiper-slide');
+const SwiperSlideClass=SwiperSlide.getAttribute('class');
+console.log(SwiperSlideClass.style);
+console.log(window.getComputedStyle(body,null).getPropertyValue("width"));
+// const bodyWidth= body.innerWidth
+const Wraper=document.querySelector('.swiper-wrapper')
+const button=document.querySelector('.block-show-all')
+button.addEventListener('click', function () {
+  // Инструкции
+  Wraper.classList.toggle('swiper-wrapper_hidden')
+  Wraper.classList.toggle('swiper-wrapper_opened')
+});

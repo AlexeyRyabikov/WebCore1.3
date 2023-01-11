@@ -6,7 +6,7 @@
 html{
     height:100%;
 }
-body{
+.body{
 font-family:'TT Lakes','Arial';    
 margin-right:auto;
 width:320px;
@@ -18,19 +18,15 @@ display: flex;
 flex-direction: column;
 box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
-header{
+.header{
 flex-grow:0;
 display:flex;
 padding:0px 0px;
 }
-footer{
+.footer{
 flex-grow:0;
 display:flex;
 flex-direction:column;
-}
-main{
-flex-basis:100px;
-flex-grow:1;
 }
 .header__logo{
     height:50px;
@@ -45,15 +41,18 @@ flex-grow:1;
     width:40px;
 }
 .row-of-titles{
-    /* border:3px solid red; */
     display:flex;
     flex-direction: column;
     align-items:flex-start;
     align-self: left;
     padding:0px;
-    margin-top:50px;
     gap:32px;
+    flex-basis:100px;
+    flex-grow:1;
     /* margin-left:16px; */
+}
+.row-of-titles__margins{
+    margin-top:50px;    
 }
 .row-of-titles__services{
     display:flex;
@@ -79,6 +78,8 @@ flex-grow:1;
     padding-bottom:8px;
 }
 .footer-email{
+}
+.footer-email__margins{
     margin-bottom:12px;
     margin-top:16px;
 }

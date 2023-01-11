@@ -1,6 +1,4 @@
-g{
-    display:block;
-}
+
 body{
     /* width:768px;     */
     margin:0px;
@@ -13,8 +11,10 @@ main{
     margin:0px;
     padding:0px;
 }
+.header__border{
+    border-bottom:1px solid blue;    
+}
 header{
-    border-bottom:1px solid blue;
     display:flex;
     height:88px;
     background-color: white;
@@ -52,14 +52,15 @@ gap:16px;
     height:40px;
     width:40px;
 }
+.big-title-box__margins{
+    margin-top:24px;
+    margin-bottom:24px;
+}
 .big-title-box{
     display:flex;
     align-items:start;
     align-self: center;
-    margin-top:24px;
-    margin-bottom:24px;
     height:40px;
-    /* border:2px solid black; */
 }
 .big-title-box__title{
     box-sizing:border-box;
@@ -84,10 +85,12 @@ gap:16px;
     align-items:flex-start;
     overflow-x:auto;
     align-self: center;
+    padding:0px;
+}
+.row-of-titles__margins{
     margin-top:32px;
     margin-bottom:32px;
-    padding:0px;
-    margin-left:16px;
+    margin-left:16px;  
 }
 h1{
     font-size:16px;
@@ -109,9 +112,11 @@ h1{
     background-color:white;
 }    
 .description{
-    margin-left:16px;
     display:flex;
     flex-wrap:wrap;
+}
+.description__margins{
+    margin-left:16px;
 }
 .description-text{
     flex-basis:300px;
@@ -120,6 +125,8 @@ h1{
 .description-link{
     display:flex;
     gap:16px;
+}
+.description-link__margins{
     margin-top:16px;
     margin-bottom:16px;
 }
@@ -146,7 +153,6 @@ header{
 }
 .big-title-box-menu-item{
     display:flex;
-    margin-right:32px;
 }
 .description-text__content::after{
 white-space:pre-wrap;

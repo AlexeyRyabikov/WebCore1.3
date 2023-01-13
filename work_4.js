@@ -1,11 +1,6 @@
 const body = document.querySelector('body');
 // console.log(body.offsetWidth);
 let detect = new MobileDetect(window.navigator.userAgent)
-console.log("Mobile: " + detect.mobile());       // телефон или планшет
-console.log("Phone: " + detect.phone());         // телефон
-console.log("Tablet: " + detect.tablet());       // планшет
-console.log("OS: " + detect.os());               // операционная система
-console.log("userAgent: " + detect.userAgent()); // userAgent
 if(detect.mobile()!==null){
   const swiper = new Swiper('.swiper', {
     // Optional parameters

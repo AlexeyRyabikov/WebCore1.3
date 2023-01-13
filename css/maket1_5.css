@@ -15,22 +15,7 @@ body{
 }
 .swiper {
   width: auto;
-  /* border: 1px solid black; */
-  /* height: 154px; */
-  /* padding:16px; */
-  /* border:1px solid red; */
   }
-  /* .swiper::before{
-  box-shadow:inset -20px 0px 10px -10px #F8F8F8;
-  position:absolute;
-  border-right:2px solid #F8F8F8;
-  content:'';
-  left: 0;
-    right: 0;
-    top: 0px;
-    z-index:2;
-    height:100%;
-} */
   .card{
     display:flex;
     align-items:stretch;
@@ -39,6 +24,8 @@ body{
     /* background-color:red; */
     background-color: white;
     height:72px;
+  }
+  .card__border{
     border: 1px solid rgb(107, 107, 121);
     border-radius:5px;
   }
@@ -54,19 +41,10 @@ body{
     width:40px;
     height:40px;
   }
-  .swiper-slide{
+  .swiper-slide__margin{
     margin-top:16px;
     width: auto !important;
-    /* margin:0;
-    border: 1px solid blueviolet; */
-    /* margin-left:16px;
-    margin-right:16px; */
   }       
-  /* .block-show-all__show{
-    content:'Показать всё'
-  }    */
-  /* .block-show-all__littleArrows{   
-  } */
   .block-show-all__littleArrow{
     display:none;
   }
@@ -74,87 +52,6 @@ body{
     /* border:2px solid red; */
     display:none;
   }
-  @media (min-width:320px) and (max-width:768px){
-    main{
-      /* padding:32px;
-      padding-top:24px; */
-      padding-left:16px;
-    }
-    .swiper{
-  height:154px;
-  margin-right:16px;
+  .gradient-for-swiper-block{
+    display:none;
   }
-  .swiper-pagination{
-    /* margin-top:10px; */
-    margin-bottom:38px;
-    padding:0;
-      }
-  }
-  
-  @media (min-width:768px) and (max-width:1120px){
-    .card{
-      width:222px;
-    }
-    .swiper-wrapper{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      column-gap:24px;
-     }
-    }
-    @media (min-width:1120px) {
-    .swiper-wrapper{
-      display:flex;
-      flex-wrap: wrap;
-      column-gap:32px;
-     }    
-    .big-title-box-menu-item{
-        display:flex;
-        margin-right:32px;
-    }
-    .description-text__content::after{
-    white-space:pre-wrap;
-    content:"\0a \0a Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким."
-    }
-    }
-@media (min-width:768px){
-  main{
-    padding:0 32px;
-    padding-top:24px;
-    padding-bottom:32px
-  }
-  .swiper-wrapper{
-    height:180px;
-    /* border:1px solid black; */
-  }
-  .swiper-wrapper_hidden{
-    overflow:hidden;
-  }
-  .swiper-wrapper_opened{
-    height:auto;
-    transition: height ease-in 1s;
-  }
-  .block-show-all{
-    /* border:2px solid red; */
-    display:block;
-    height:24px;
-    margin-top:24px;
-    background-color:transparent;
-    border:none;
-  }          
-    .block-show-all__show:after{
-      content:'Показать всё';
-    }   
-    .block-show-all__hide:after{
-      content:'Скрыть';
-    }
-    .block-show-all__littleArrow{
-      display:inline-block;
-      margin-right:10px;
-    }
-    .block-show-all__hide .block-show-all__littleArrow{
-      transform:rotate(180deg)
-    }
-  }
-
- 

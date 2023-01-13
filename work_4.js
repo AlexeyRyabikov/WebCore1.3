@@ -1,12 +1,12 @@
 const body = document.querySelector('body');
 // console.log(body.offsetWidth);
 let detect = new MobileDetect(window.navigator.userAgent)
-alert("Mobile: " + detect.mobile());       // телефон или планшет
+console.log("Mobile: " + detect.mobile());       // телефон или планшет
 console.log("Phone: " + detect.phone());         // телефон
 console.log("Tablet: " + detect.tablet());       // планшет
 console.log("OS: " + detect.os());               // операционная система
 console.log("userAgent: " + detect.userAgent()); // userAgent
-if(body.offsetWidth<768){
+if(detect.mobile()!==null){
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -16,19 +16,22 @@ if(body.offsetWidth<768){
     pagination: {
       el: '.swiper-pagination',
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     spaceBetween:16,
     loopedSlides:3,
     slidesPerView:'auto',
   });
   const link = document.createElement('link');
+  const link2= document.createElement('link');
   link.rel = 'stylesheet';
+  link2.rel = 'stylesheet';
   link.href = 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css';
+  link2.href = 'css/maket1_5_1.css';
+  document.head.appendChild(link);
+  document.head.appendChild(link2);
+} else{
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'css/maket1_5_2.css';
   document.head.appendChild(link);
 };
 
@@ -43,6 +46,6 @@ button.addEventListener('click', function () {
   // Инструкции
   Wraper.classList.toggle('swiper-wrapper_hidden')
   Wraper.classList.toggle('swiper-wrapper_opened')
-  button.classList.toggle('block-show-all__show')
-  button.classList.toggle('block-show-all__hide')
+  button.classList.toggle('block-show-all_show')
+  button.classList.toggle('block-show-all_hide')
 });

@@ -1,0 +1,30 @@
+    main{
+      /* padding:32px;
+      padding-top:24px; */
+      padding-left:16px;
+    }
+    .swiper{
+  height:154px;
+  }
+  .swiper-margin{
+    margin-right:16px;
+  }
+  .swiper-pagination{
+    /* margin-top:10px; */
+    margin-bottom:38px;
+    padding:0;
+      }
+  .gradient-for-swiper-block{    
+    display:block;
+  }      
+  .swiper::after{
+  content:"";
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  width:50px;
+  background-image: linear-gradient(90deg,transparent,#F8F8F8);
+  z-index:1;
+    }     
+      

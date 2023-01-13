@@ -37,4 +37,6 @@ button.addEventListener('click', function () {
   // Инструкции
   Wraper.classList.toggle('swiper-wrapper_hidden')
   Wraper.classList.toggle('swiper-wrapper_opened')
+  button.classList.toggle('block-show-all__show')
+  button.classList.toggle('block-show-all__hide')
 });

@@ -1,4 +1,15 @@
-
+*{
+    margin:0;
+    padding:0;
+    font-family: 'TT Lakes';
+}
+h1{
+    font-size:32px;
+}
+.body_HiddenOverflow{
+    position:fixed;
+    overflow:hidden;
+}
 .body{
     /* width:768px;     */
     margin:0px;
@@ -7,10 +18,10 @@
     background-color: rgb(239, 239, 239);
 }
 
-main{ 
-    margin:0px;
-    padding:0px;
-}
+html{
+    height:100%; 
+    }
+    
 .header__border{
     border-bottom:1px solid blue;    
 }
@@ -141,21 +152,14 @@ src:'images\icon.svg';
     flex-basis:300px;
     flex-grow:1;
 }
+.price-description{
+    font-size:14px;
+    max-width:421px;
+    margin-bottom:20px;
+}
 @media (min-width:768px) and (max-width:1120px){
 .description-text__content::after{
         white-space:pre-wrap;
         content:"\0a \0a Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера"
  }
-}
-@media (min-width:1120px) {
-.header{
-    display:none;
-}
-.big-title-box-menu-item{
-    display:flex;
-}
-.description-text__content::after{
-white-space:pre-wrap;
-content:"\0a \0a Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким."
-}
 }

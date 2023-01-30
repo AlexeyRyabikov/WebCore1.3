@@ -1,0 +1,50 @@
+.swiper-slide_prices-header{
+  display:none;
+}
+.pricesSwiper{
+    margin-left:8px;
+    overflow:hidden;
+  }
+  .manufacturersSwiper{
+width: auto;
+margin-left:16px;
+overflow:hidden;
+}
+.block-show-all{
+  /* border:2px solid red; */
+  display:none;
+}
+.servicesSwiper{
+  margin-left:16px;
+  overflow:hidden;
+}
+.services-block{
+  min-width:0%;
+}
+.swiper-margin{
+  margin-right:16px;
+}
+.swiper-pagination__margins{
+    position:static;
+    margin-top:10px;
+}
+.ServicesPagination{
+  position:static;
+  margin-top:10px;
+}
+.gradient-for-swiper-block{    
+  display:block;
+}      
+
+.card-price-item_name{
+  color:gray;
+}     
+.burger-window-transparent,.feedback-window-transparent,.call-window-transparent{
+  display:none;
+}
+
+.burger-window-body,.feedback-window-options,.call-window-options{
+width:100%;
+max-width:100%;
+margin:0;
+}

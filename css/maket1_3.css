@@ -1,5 +1,5 @@
 
-.body{
+body{
     /* width:768px;     */
     margin:0px;
     padding:0px;
@@ -14,7 +14,7 @@ main{
 .header__border{
     border-bottom:1px solid blue;    
 }
-.header{
+header{
     display:flex;
     height:88px;
     background-color: white;
@@ -148,7 +148,7 @@ src:'images\icon.svg';
  }
 }
 @media (min-width:1120px) {
-.header{
+header{
     display:none;
 }
 .big-title-box-menu-item{

@@ -65,8 +65,6 @@ const ManufactorersWraper=document.querySelector('.manufacturers-main .swiper-wr
 const ManufactorersButton=document.querySelector('.manufacturers-main .block-show-all')
 const ServicesWraper=document.querySelector('.services-main .swiper-wrapper')
 const ServicesButton=document.querySelector('.services-main .block-show-all')
-const PricesWraper=document.querySelector('.prices-main .swiper-wrapper')
-const PricesButton=document.querySelector('.prices-main .block-show-all')
 
 
 ManufactorersButton.addEventListener('click', function () {
@@ -82,11 +80,4 @@ ServicesButton.addEventListener('click', function () {
   ServicesWraper.classList.toggle('swiper-wrapper_opened')
   ServicesButton.classList.toggle('block-show-all_show')
   ServicesButton.classList.toggle('block-show-all_hide')
-});
-PricesButton.addEventListener('click', function () {
-  // Инструкции
-  PricesWraper.classList.toggle('swiper-wrapper_hidden')
-  PricesWraper.classList.toggle('swiper-wrapper_opened')
-  PricesButton.classList.toggle('block-show-all_show')
-  PricesButton.classList.toggle('block-show-all_hide')
 });

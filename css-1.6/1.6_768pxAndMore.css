@@ -44,7 +44,17 @@ border:none;
   position:static;
 }
 .burger-window-body{
+  position:relative;
   width:320px;
+  right:100%;
+  }
+  .burger-window-body_active{
+    transform:translateX(320px)
+}
+  .footer{
+    padding:24px;
+  }
+  .manufacturers-main{
   }
 @media (min-width:768px){
     .manufacturers-main{
@@ -84,6 +94,7 @@ border:none;
       height:24px;
       background-color:transparent;
       border:none;
+      font-weight:500;
     }
     .block-show-all__margin{
       margin-top:24px;
@@ -103,7 +114,10 @@ border:none;
         transform:rotate(180deg)
       }
     }
-  
+    .bottom-description-box{
+      margin:0;
+      color:#7E7E82;
+    }
   @media (min-width:768px) and (max-width:1120px){
       .card{
         width:222px;
@@ -119,7 +133,6 @@ border:none;
       }
       .bottom-description-box{
         justify-content:space-between;
-        margin:25px;
         display:flex;
       }
       .bottom-description{

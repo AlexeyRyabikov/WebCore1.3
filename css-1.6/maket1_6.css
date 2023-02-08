@@ -2,19 +2,26 @@
     margin:0;
     padding:0;
     font-family: 'TT Lakes';
+    /* font-weight:400; */
 }
+/* .main{
+    font-weight:400;
+} */
 h1{
-    font-size:32px;
+    font-size:28px;
+}
+h2{
+    font-size:24px;
+    color:#7E7E82;
+    font-weight:inherit;
 }
 .body_HiddenOverflow{
     position:fixed;
     overflow:hidden;
 }
 .body{
-    /* width:768px;     */
     margin:0px;
     padding:0px;
-    font-family:'TT Lakes','Arial';
     background-color: rgb(239, 239, 239);
 }
 
@@ -34,7 +41,6 @@ html{
     padding-left:24px;
     padding-right:24px;   
 }
-    /* overflow-y:hidden; */
 .header__logo{
     height:50px;
     align-self:center;
@@ -53,7 +59,6 @@ margin-top:auto;
 margin-bottom:auto;
 gap:16px;
 }
-/* overflow-x:auto */
 .header__divider{
     height:32px;
     align-self:center;
@@ -78,8 +83,8 @@ gap:16px;
     display:block;
     height:100%;
     margin:0px auto 0px 0px; 
-    /* border:3px solid green */
 }
+
 .big-title-box-menu-item{
     display:none;
     margin-right:32px;
@@ -91,9 +96,8 @@ gap:16px;
     margin-right:16px;
 }
 .row-of-titles{
-    /* border:3px solid red; */
     display:flex;
-    align-items:flex-start;
+    align-items:stretch;
     overflow-x:auto;
     align-self: center;
     padding:0px;
@@ -103,19 +107,28 @@ gap:16px;
     margin-bottom:32px;
     margin-left:16px;  
 }
-h1{
+/* h1{
     font-size:16px;
-}
+} */
 .row-of-titles__services{
     white-space:nowrap;
     margin-right:5px;
     height:40px;
     /* border:3px solid blue;    */
     margin-right:16px;
-    padding-top:auto;
-    padding-bottom:auto;
+    /* padding-bottom:auto; */
+    padding:auto;
     padding-right:16px;
     padding-left:16px;
+    display:table;
+}
+.row-of-titles__services div{
+    margin-top:auto;
+    margin-bottom:auto;
+    display:table-cell;
+    vertical-align: middle;
+    color:#7E7E82;
+    font-weight:500;
 }
 .row-of-titles__services_highlighted{
     border:2px solid rgb(16, 171, 255);
@@ -157,9 +170,26 @@ src:'images\icon.svg';
     max-width:421px;
     margin-bottom:20px;
 }
+.swiper-slide_prices-header{
+    color:#7E7E82;   
+}
+.footer{
+    /* color:#7E7E82; */
+}
 @media (min-width:768px) and (max-width:1120px){
 .description-text__content::after{
         white-space:pre-wrap;
         content:"\0a \0a Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера"
  }
+}
+.card-service>div{
+    font-weight:500;
+}
+.get-offer-button{
+    margin:0px;
+    height:95px;
+    font-size:16px;
+    font-weight:500;
+    border-bottom:1px solid rgb(34, 166, 223)
+
 }

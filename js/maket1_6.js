@@ -21,7 +21,7 @@ const exitCallWindowButton=document.querySelector('.call-exit-image')
 
 //burger
 burgerButton.addEventListener('click', function () {
-burgerWindow.classList.toggle('burger-window_disabled') 
+burgerWindow.classList.toggle('burger-window_disabled')
 body.classList.toggle('body_HiddenOverflow')  
 });
 exitBurgerWindowbutton.addEventListener('click', function () {

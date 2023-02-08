@@ -13,10 +13,6 @@
     width:40px;
     height:40px;
 }
-.description-text__content::after{
-  white-space:pre-wrap;
-  content:"\0a \0a Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера"
-}
 
 /* @media (min-width:768px){
     .manufacturers-main{

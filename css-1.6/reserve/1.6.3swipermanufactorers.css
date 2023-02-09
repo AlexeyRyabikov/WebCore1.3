@@ -1,0 +1,105 @@
+    main{
+      /* padding:32px;
+      padding-top:24px; */
+      padding-left:16px;
+    }
+    .swiper{
+  height:154px;
+  }
+  .swiper-margin{
+    margin-right:16px;
+  }
+  .swiper-pagination{
+    /* margin-top:10px; */
+    margin-bottom:38px;
+    padding:0;
+      }
+  .gradient-for-swiper-block{    
+    display:block;
+  }      
+  .swiper::after{
+  content:"";
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  width:50px;
+  background-image: linear-gradient(90deg,transparent,#F8F8F8);
+  z-index:1;
+    }     
+.card-service{
+      display:flex;
+      height:160px;
+      background:white;
+      padding:16px;
+      box-sizing:border-box;
+      /* border:3px solid black; */
+  }
+.card-service__arrow{
+      margin-top:auto;
+      margin-right:16px;
+      background-image:url(../images/arrow.svg);
+      width:40px;
+      height:40px;
+}
+  /* 
+
+   @media (min-width:768px){
+      .manufacturers-main{
+         padding:0 32px;
+        padding-top:8px;
+        padding-bottom:32px 
+      }
+      .manufacturers-block{
+        padding-left:32px;
+      }
+      .swiper-wrapper{
+        height:180px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      .swiper-wrapper_hidden{
+        overflow:hidden;
+      }
+      .swiper-wrapper_opened{
+        height:auto;
+        transition: height ease-in 1s;
+      }
+      .block-show-all{
+         border:2px solid red; 
+        display:block;
+        height:24px;
+        background-color:transparent;
+        border:none;
+      }
+      .block-show-all__margin{
+        margin-top:24px;
+      }          
+        .block-show-all_show:after{
+          content:'Показать всё';
+        }   
+        .block-show-all_hide:after{
+          content:'Скрыть';
+        }
+        .block-show-all__littleArrow{
+          display:inline-block;
+          margin-right:10px;
+        }
+        .block-show-all_hide .block-show-all__littleArrow{
+          transform:rotate(180deg)
+        }
+      }
+    
+    @media (min-width:768px) and (max-width:1120px){
+        .card{
+          width:222px;
+        }
+        .swiper-wrapper{
+          column-gap:24px;
+         }
+        }
+        @media (min-width:1120px) {
+        .swiper-wrapper{
+          column-gap:32px;
+         } }   */

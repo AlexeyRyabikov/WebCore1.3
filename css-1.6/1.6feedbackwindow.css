@@ -15,7 +15,6 @@
     transition-duration:0.5s;
     transition-timing-function:ease; */
 }
-
 .feedback-window-row-of-titles{
     display:flex;
     flex-direction:column;
@@ -146,9 +145,9 @@ font-weight:bold;
 }
 .footer-languages__language{
 }
-/* h1{
+.feedback-window h1{
 font-size:16px;
-} */
+}
 .feedback-window-row-of-titles__services_highlight{
 position:absolute;
 left:0px;

@@ -14,8 +14,9 @@
   background-color:white;
 }
 .manufacturersSwiper {
-  width: auto;
+  /* width: auto; */
   margin-left:16px;
+  /* overflow:hidden; */
 }
 .servicesSwiper{
 margin-left:16px;

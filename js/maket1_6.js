@@ -1,9 +1,8 @@
 const burgerButton=document.querySelector('.header__icon_burger');
 const burgerWindow=document.querySelector('.burger-window')
+const burgerWindowBody=document.querySelector('.burger-window-body')
 const exitBurgerWindowbutton=document.querySelector('.icon-exit')
 const BurgerWindowtransparrent=document.querySelector('.burger-window-transparent')
-const meta=document.querySelector('meta')
-const body=document.querySelector('.body');
 
 
 const FeedbackWindow=document.querySelector('.feedback-window')
@@ -11,26 +10,46 @@ const FeedbackButton=document.querySelector('.header__icon_feedback')
 const Feedback2ndButton=document.querySelector('.header__icon_leftfeedback')
 const FeedbackWindowtransparrent=document.querySelector('.feedback-window-transparent')
 const exitFeedbackWindowButton=document.querySelector('.feedback-exit-image')
-
-
 const CallWindow=document.querySelector('.call-window')
 const CallButton=document.querySelector('.header__icon_call')
 const Call2ndButton=document.querySelector('.header__icon_leftcall')
 const CallWindowtransparrent=document.querySelector('.call-window-transparent')
 const exitCallWindowButton=document.querySelector('.call-exit-image')
+const ToggleDisabledWindow=function(){
+burgerWindow.classList.toggle('burger-window_disabled')
+body.classList.toggle('body_HiddenOverflow')
+}   
+const ToggleBurgerTransition=function(){
+    burgerWindowBody.classList.toggle('burger-window-body_active')
+    burgerWindow.classList.toggle('burger-window_opacity')   
+}
 
 //burger
 burgerButton.addEventListener('click', function () {
-burgerWindow.classList.toggle('burger-window_disabled')
-body.classList.toggle('body_HiddenOverflow')  
+    ToggleDisabledWindow();
+    ToggleBurgerTransition()
 });
-exitBurgerWindowbutton.addEventListener('click', function () {
-burgerWindow.classList.toggle('burger-window_disabled')
-body.classList.toggle('body_HiddenOverflow')     
+let pulls=0;
+let actions=0;
+exitBurgerWindowbutton.addEventListener('click', function (e1) {
+pulls++
+ToggleBurgerTransition()
+// setTimeout("ToggleDisabledWindow()", 1000)
+
+burgerWindowBody.addEventListener('transitionend',function(e){
+    if((e.propertyName=='transform')&&(pulls>actions)){
+        actions++
+    ToggleDisabledWindow()}
 });
+})
 BurgerWindowtransparrent.addEventListener('click', function () {
-burgerWindow.classList.toggle('burger-window_disabled')
-body.classList.toggle('body_HiddenOverflow')     
+ToggleBurgerTransition()
+// setTimeout("ToggleDisabledWindow()", 1000) 
+burgerWindowBody.addEventListener('transitionend',function(e){
+    if((e.propertyName=='transform')&&(pulls>actions)){
+        actions++
+    ToggleDisabledWindow()}
+});
 });
 
 // feedback
@@ -69,11 +88,3 @@ body.classList.toggle('body_HiddenOverflow')
     body.classList.toggle('body_HiddenOverflow')     
     });
 
-console.log(Number(body.offsetWidth));
-console.log(screen.height,'screenwidth')
-const px1440 = document.createElement('link');
-px1440.href = 'css-1.6/1.6_1440px.css';
-px1440.rel = 'stylesheet';
-if(body.offsetWidth>=1440){
-document.head.appendChild(px1440)
-}

@@ -1,5 +1,34 @@
-let detect = new MobileDetect(window.navigator.userAgent)
-if(detect.mobile()!==null){
+const meta=document.querySelector('meta')
+const body=document.querySelector('.body');
+console.log(Number(body.offsetWidth));
+console.log(screen.height,'screenwidth')
+const px1440 = document.createElement('link');
+px1440.href = 'css-1.6/1.6_1440px.css';
+px1440.rel = 'stylesheet';
+const px768px1440 = document.createElement('link');
+px768px1440.href = 'css-1.6/1.6_768-1440px.css';
+px768px1440.rel = 'stylesheet';
+if((body.offsetWidth<1440)&&(body.offsetWidth>768)){
+    document.head.appendChild(px768px1440)
+    console.log('включен 768-1440')
+    }
+if(body.offsetWidth>=1440){
+burgerWindow.classList.remove('burger-window_disabled')
+document.head.appendChild(px1440)
+console.log('включен 1440')
+}
+if(body.offsetWidth>=768){
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'css-1.6/1.6_768pxAndMore.css';
+  console.log('включен >768')
+  document.head.appendChild(link);
+  }
+else{
+  exitBurgerWindowbutton.addEventListener('click', function (e1) {
+    ToggleDisabledWindow()
+  })
+  console.log('включен <786')
   const head= document.querySelector('head')
   const link = document.createElement('link');
   const link2= document.createElement('link');
@@ -16,7 +45,7 @@ new Swiper('.manufacturersSwiper', {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.manufacturersPagination',
     },
     spaceBetween:16,
     loopedSlides:3,
@@ -47,14 +76,6 @@ new Swiper('.servicesSwiper', {
     loopedSlides:3,
     slidesPerView:'auto',
   });
-
-
-
-} else{
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'css-1.6/1.6_768pxAndMore.css';
-  document.head.appendChild(link);
 };
 
 const SwiperSlide=document.querySelector('.swiper-slide');

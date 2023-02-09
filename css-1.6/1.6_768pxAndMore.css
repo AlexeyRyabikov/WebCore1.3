@@ -1,0 +1,155 @@
+
+.card-price{
+display:flex;
+width:auto;
+height:auto;
+padding:16px;
+align-items:center;
+justify-content:space-between;
+}
+.card-price-item__name{
+  display:none;
+}
+.card-price-item:first-child{
+width:360px;
+}
+.card-price-item:nth-child(2){
+width:80px;
+}
+.card-price-item:nth-child(3){
+  width:90px;
+  }
+.CardPriceButton{
+width:120px;
+}
+.pricesSwiper .swiper-wrapper{
+  gap:0px;
+}
+.pricesSwiper .card__border{
+  border:none;
+  border-radius:0;
+}
+
+.swiper-slide_prices-header .card-price,.card-price__border{
+background:none;
+border:none;
+}
+.pricesSwiper .swiper-slide__margin{
+  margin-top:1px;
+}
+.card-price-item{
+  margin-bottom:0px;
+}
+.CardPriceButton{
+  position:static;
+}
+.burger-window-body{
+  width:320px;
+  }
+@media (min-width:768px){
+    .manufacturers-main{
+      /* padding:0 32px;
+      padding-top:8px;
+      padding-bottom:32px */
+    }
+    /* .manufacturers-block{
+      padding-left:32px;
+      height:100px;
+    } */
+    .manufacturersSwiper .swiper-wrapper{
+    height:100px;
+    }
+    .servicesSwiper .swiper-wrapper{
+      height:180px;
+    }
+    .pricesSwiper .swiper-wrapper{
+      height:auto;
+      flex-direction:column;
+    }
+    .swiper-wrapper{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .swiper-wrapper_hidden{
+      overflow:hidden;
+    }
+    .swiper-wrapper.swiper-wrapper_opened{
+      height:auto;
+      transition: height ease-in 1s;
+    }
+    .block-show-all{
+      /* border:2px solid red; */
+      display:block;
+      height:24px;
+      background-color:transparent;
+      border:none;
+    }
+    .block-show-all__margin{
+      margin-top:24px;
+      margin-left:20px;
+    }          
+      .block-show-all_show:after{
+        content:'Показать всё';
+      }   
+      .block-show-all_hide:after{
+        content:'Скрыть';
+      }
+      .block-show-all__littleArrow{
+        display:inline-block;
+        margin-right:10px;
+      }
+      .block-show-all_hide .block-show-all__littleArrow{
+        transform:rotate(180deg)
+      }
+    }
+  
+  @media (min-width:768px) and (max-width:1120px){
+      .card{
+        width:222px;
+      }
+      .swiper-wrapper{
+        column-gap:24px;
+       }
+      }
+      @media (min-width:1120px) {
+      .swiper-wrapper{
+        column-gap:32px;
+       }    
+      }
+      .bottom-description-box{
+        justify-content:space-between;
+        margin:25px;
+        display:flex;
+      }
+      .bottom-description{
+      flex: 1 2 200px;
+      padding-bottom:16px;
+      }
+      .bottom-description:first-child{
+        text-align:left;        
+      }
+      .bottom-description:last-child{
+        text-align:right;        
+      }
+      .feedback-exit-image__position,.call-exit-image__position{
+        position:absolute;
+        transform:translate(-75px,27px);
+      }
+      /* СЕРВИСЫ
+  .swiper-services-wrapper{
+      height:180px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap:24px;
+      border: 3px solid red;
+    }
+  .swiper-services-wrapper_hidden{
+      overflow:hidden;
+    }
+  .swiper-services-wrapper_opened{
+      height:auto;
+      transition: height ease-in 1s;
+    }
+     */

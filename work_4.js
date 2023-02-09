@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 // console.log(body.offsetWidth);
 let detect = new MobileDetect(window.navigator.userAgent)
-if(detect.mobile()!==null){
+// if(detect.mobile()!==null){
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -23,12 +23,12 @@ if(detect.mobile()!==null){
   link2.href = 'css/maket1_5_1.css';
   document.head.appendChild(link);
   document.head.appendChild(link2);
-} else{
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'css/maket1_5_2.css';
-  document.head.appendChild(link);
-};
+// } else{
+//   const link = document.createElement('link');
+//   link.rel = 'stylesheet';
+//   link.href = 'css/maket1_5_2.css';
+//   document.head.appendChild(link);
+// };
 
 const SwiperSlide=document.querySelector('.swiper-slide');
 const SwiperSlideClass=SwiperSlide.getAttribute('class');

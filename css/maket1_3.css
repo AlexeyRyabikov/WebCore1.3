@@ -1,5 +1,6 @@
 
 .body{
+    /* width:768px;     */
     margin:0px;
     padding:0px;
     font-family:'TT Lakes','Arial';
@@ -22,6 +23,7 @@ main{
     padding-left:24px;
     padding-right:24px;   
 }
+    /* overflow-y:hidden; */
 .header__logo{
     height:50px;
     align-self:center;
@@ -40,6 +42,7 @@ margin-top:auto;
 margin-bottom:auto;
 gap:16px;
 }
+/* overflow-x:auto */
 .header__divider{
     height:32px;
     align-self:center;
@@ -64,6 +67,7 @@ gap:16px;
     display:block;
     height:100%;
     margin:0px auto 0px 0px; 
+    /* border:3px solid green */
 }
 .big-title-box-menu-item{
     display:none;
@@ -76,6 +80,7 @@ gap:16px;
     margin-right:16px;
 }
 .row-of-titles{
+    /* border:3px solid red; */
     display:flex;
     align-items:flex-start;
     overflow-x:auto;
@@ -96,8 +101,8 @@ h1{
     height:40px;
     /* border:3px solid blue;    */
     margin-right:16px;
-    /* padding-top:auto;
-    padding-bottom:auto; */
+    padding-top:auto;
+    padding-bottom:auto;
     padding-right:16px;
     padding-left:16px;
 }

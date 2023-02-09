@@ -3,6 +3,9 @@
     padding:0px;
     box-sizing:border-box;
 }
+html{
+    height:100%;
+}
 .body{
 font-family:'TT Lakes','Arial';    
 margin-right:auto;

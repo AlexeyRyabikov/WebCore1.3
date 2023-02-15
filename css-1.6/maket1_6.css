@@ -5,7 +5,7 @@
     /* Браузер сначала попробует найти шрифт локально */
     src: local("TT Lakes"),
          /* Если браузер не поддерживает woff2, загрузит woff */
-         url("/fonts/TTLakes.woff") format("woff");
+         url("/fonts/TTLakes-Regular.woff") format("woff");
   }
 *{
     margin:0;

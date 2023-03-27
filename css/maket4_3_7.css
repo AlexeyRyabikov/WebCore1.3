@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+*{font-family: roboto;}
+.search-block{
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    padding:62px;
+    width:661px;
+    background-color:gray;
+    font-size:24px;
+}
+.inner-search-block{
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    width:500px;
+    margin:auto;
+}
+.input-block{
+    background-color:white;
+    border:none;
+    height: 61px;
+    font-size:48px;
+    /* width:400px; */
+}
+.saved-block{
+    display:flex;
+    padding:16px;
+    font-size:24px;
+    height:101px;
+    width:500px;
+    background-color:rgb(155, 35, 219);
+    border: 1px solid #000000;
+}
+.saved-block-text{
+    width:auto;
+}
+.dropdown-cross{
+    margin:auto 0;
+    margin-left:auto;
+    margin-right:25px;
+    width:42px;
+    height:42px;
+}
+.dropdown-box{
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    height:265px;
+}
+.dropdown-item{
+    background-color: #E3E3E3;
+    height:44px;
+    padding:0px 10px;
+    border: 2px solid #000000;
+}
+.dropdown-item:hover{
+    background-color: #65CDF9;   
+}
+.dropdown-box_invisible{
+    visibility:hidden;
+}

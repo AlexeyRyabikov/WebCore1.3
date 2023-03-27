@@ -20,7 +20,7 @@ const debounce = (fn, debounceTime) => {
 const dropdownBox=document.querySelector('.dropdown-box')
 const inputBlock=document.querySelector('.input-block');
 const blockSavedBlocks=document.querySelector('.block-saved-blocks');
-console.log(dropdownBox.children[0])
+// console.log(dropdownBox.children[0])
 let newVal
 let gotObj
 let getInfo=async function(e){
@@ -35,9 +35,6 @@ let getInfo=async function(e){
 }   
     
     else{dropdownBox.classList.add('dropdown-box_invisible')}
-    console.log(gotObj.items[0])
-    console.log('залупа')
-    console.log(newVal)
 }
 let debouncedInfo=debounce(getInfo,400);
 document.addEventListener('keyup',debouncedInfo);
@@ -47,8 +44,8 @@ function saveData(e){
     blockSavedBlocks.children[blockSavedBlocks.children.length-1].children[0].insertAdjacentHTML('beforeend',`<span>Name:${e.target.parentObj.name}</span><br>`)
     blockSavedBlocks.children[blockSavedBlocks.children.length-1].children[0].insertAdjacentHTML('beforeend',`<span>Owner:${e.target.parentObj.owner.login}</span><br>`)
     blockSavedBlocks.children[blockSavedBlocks.children.length-1].children[0].insertAdjacentHTML('beforeend',`<span>Stars:${e.target.parentObj.stargazers_count}</span><br>`)
-    console.log(e.target);
-    console.log(e.target.parentObj);    
+    // console.log(e.target);
+    // console.log(e.target.parentObj);    
 }
 function deleteData(e){
     if(e.target.classList.contains('dropdown-cross')){
